@@ -179,5 +179,21 @@ hr {
         padding-top: 10%;
         font-size: 10vw;
     }
+
+    #education {
+        padding-top: 15%;
+    }
+    
+    #work {
+        padding-top: 15%;
+    }
+    
+    #leadership {
+        padding-top: 15%;
+    }
+    
+    #information {
+        padding-top: 15%;
+    }
 }
 
