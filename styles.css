@@ -1,0 +1,184 @@
+@font-face {
+    font-family: questrial;
+    src: url("questrial.ttf") format("truetype");
+}
+
+html {
+    height: 150%;
+}
+
+
+body {
+    width: 95%;
+    height: 100%;
+    background-color: #1F0975;
+	color: #FFFFFF;
+    font-family: questrial, sans-serif;
+    background-image: url("skrinosbckground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#subheader {
+    text-align: center;
+    
+    width: 100%;
+}
+
+.sectionheader {
+    font-weight: bold;
+   
+}
+
+.positiontitle {
+    font-weight: bold;
+}
+
+
+.position {
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.college {
+    font-weight: normal;
+}
+
+
+
+
+.split {
+    height: 25px;
+}
+
+ul {
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    font-size: 1vw;
+    margin-left: 0.5%;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.dark {
+    background-color:#1F0975;
+    color: white;
+}
+
+.light {
+    color: white; 
+    background-color: white;
+}
+
+h2 {
+    font-size: 2vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0.5%;
+    position: relative;
+}
+
+li {
+    font-size: 1vw;
+}
+
+h1 {
+    font-size: 3vw;
+    padding-top: 4%;
+    text-align: center;
+}
+
+#subheader {
+    padding-bottom: 4%;
+}
+
+hr {
+    height: 0.5%;
+    width: 105%;
+    color: white;
+}
+
+#education {
+    padding-top: 7%;
+}
+
+#work {
+    padding-top: 4%;
+}
+
+#leadership {
+    padding-top: 4%;
+}
+
+#information {
+    padding-top: 4%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    display: flex;
+    
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: flex;   
+}
+
+.row {
+    margin-left: 0.25%;
+}
+
+.location, .date {
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 10vw;
+    }
+
+    li {
+        font-size: 5vw;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .location, .date {
+        font-size: 5vw;
+    }
+
+    body {
+        margin: 5%;
+        width: 90%;
+        word-wrap:break-word;
+        hyphens: auto;
+    }
+
+    h1 {
+        padding-top: 10%;
+        font-size: 10vw;
+    }
+}
+
