@@ -14,7 +14,7 @@ body {
     width: 95%;
     height: 100%;
     background-color: #1F0975;
-	color: #FFFFFF;
+    color: #FFFFFF;
     font-family: questrial, sans-serif;
     background-image: url("skrinosbckground.svg");
     background-repeat: no-repeat;
@@ -25,13 +25,13 @@ body {
 
 #subheader {
     text-align: center;
-    
+
     width: 100%;
 }
 
 .sectionheader {
     font-weight: bold;
-   
+
 }
 
 .positiontitle {
@@ -42,7 +42,7 @@ body {
 .position {
     font-weight: bold;
     font-style: italic;
-    
+
 }
 
 .college {
@@ -75,12 +75,12 @@ p {
 }
 
 .dark {
-    background-color:#1F0975;
+    background-color: #1F0975;
     color: white;
 }
 
 .light {
-    color: white; 
+    color: white;
     background-color: white;
 }
 
@@ -132,26 +132,27 @@ hr {
     float: left;
     width: 50%;
     display: flex;
-    
+
 }
 
 .row:after {
     content: "";
     clear: both;
-    display: flex;   
+    display: flex;
 }
 
 .row {
     margin-left: 0.25%;
 }
 
-.location, .date {
+.location,
+.date {
     font-size: 1vw;
 }
 
 .panel {
     background-color: #aa89a0;
-    color:white;
+    color: white;
     border-radius: 5vw;
     height: 40%;
     width: 50%;
@@ -165,7 +166,7 @@ hr {
     margin: 0;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: #1F0975;
     color: white;
     width: 30%;
@@ -198,7 +199,8 @@ hr {
         width: 100%;
     }
 
-    .location, .date {
+    .location,
+    .date {
         font-size: 5vw;
     }
 
@@ -209,7 +211,7 @@ hr {
     body {
         margin: 5%;
         width: 90%;
-        word-wrap:break-word;
+        word-wrap: break-word;
         hyphens: auto;
         overflow-x: hidden;
     }
@@ -222,15 +224,15 @@ hr {
     #education {
         padding-top: 15%;
     }
-    
+
     #work {
         padding-top: 15%;
     }
-    
+
     #leadership {
         padding-top: 15%;
     }
-    
+
     #information {
         padding-top: 15%;
     }
@@ -247,16 +249,15 @@ hr {
     }
 
     #bottom {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: #1F0975;
-    color: white;
-    width: 70%;
-    height: 20%;
-    margin-bottom: 1vw;
-    margin-top: 1vw;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1F0975;
+        color: white;
+        width: 70%;
+        height: 20%;
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+    }
 }
-}
-

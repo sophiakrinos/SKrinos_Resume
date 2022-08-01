@@ -239,25 +239,27 @@
     <p><u>General Body Member Organizations:</u> Florida Women in Business, UF Pre-Law Honor Society</p>
   </section>
   <footer class="credits">
-    <button id="bottom" onclick="photo()"><h1>Sophia Krinos</h1></button>
+    <button id="bottom" onclick="photo()">
+      <h1>Sophia Krinos</h1>
+    </button>
   </footer>
   <script>
     var open = false;
     var created = false;
     function photo() {
-      if(open == false && created == true) {
+      if (open == false && created == true) {
         var footer = document.getElementsByClassName("panel");
         footer[0].style.display = "block";
         open = true;
-      } else if(open == false && created == false){
+      } else if (open == false && created == false) {
         var footer = document.getElementsByClassName("credits");
         var panel = document.createElement("div");
         var image = document.createElement("img");
         var description = document.createElement("p");
         var linkedin = document.createElement("a");
-        description.innerHTML="Gainesville, FL | (813) 334-8273 | sophiakrinos@ufl.edu |";
-        linkedin.href="https://www.linkedin.com/in/sophia-krinos/";
-        linkedin.innerHTML="https://www.linkedin.com/in/sophia-krinos/";
+        description.innerHTML = "Gainesville, FL | (813) 334-8273 | sophiakrinos@ufl.edu |";
+        linkedin.href = "https://www.linkedin.com/in/sophia-krinos/";
+        linkedin.innerHTML = "https://www.linkedin.com/in/sophia-krinos/";
         image.src = "sophi.jpg";
         panel.classList.add("panel");
         image.classList.add("profilepic");
@@ -276,4 +278,4 @@
   </script>
 </body>
 
-</html> 
+</html>
