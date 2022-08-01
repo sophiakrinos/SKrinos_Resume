@@ -106,9 +106,8 @@ h1 {
 }
 
 hr {
-    height: 0.5%;
+    border-top: 3px solid white;
     width: 105%;
-    color: white;
 }
 
 #education {
