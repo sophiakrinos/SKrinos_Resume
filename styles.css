@@ -4,7 +4,9 @@
 }
 
 html {
-    height: 150%;
+    height: 170%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -102,7 +104,7 @@ h1 {
 }
 
 #subheader {
-    padding-bottom: 4%;
+    float: right;
 }
 
 hr {
@@ -147,6 +149,38 @@ hr {
     font-size: 1vw;
 }
 
+.panel {
+    background-color: #aa89a0;
+    color:white;
+    border-radius: 5vw;
+    height: 40%;
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    text-align: center;
+}
+
+#bottom {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #1F0975;
+    color: white;
+    width: 30%;
+    height: 10%;
+    margin-bottom: 10vw;
+    margin-top: 5vw;
+}
+
+.profilepic {
+    width: 20%;
+    height: 20%;
+    float: right;
+
+}
+
 @media only screen and (max-width: 600px) {
     p {
         font-size: 5vw;
@@ -168,11 +202,16 @@ hr {
         font-size: 5vw;
     }
 
+    html {
+        height: 100%;
+    }
+
     body {
         margin: 5%;
         width: 90%;
         word-wrap:break-word;
         hyphens: auto;
+        overflow-x: hidden;
     }
 
     h1 {
@@ -195,5 +234,29 @@ hr {
     #information {
         padding-top: 15%;
     }
+
+    .panel {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .profilepic {
+        width: 40%;
+        height: 40%;
+    }
+
+    #bottom {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #1F0975;
+    color: white;
+    width: 70%;
+    height: 20%;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
 }
 

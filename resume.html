@@ -232,18 +232,48 @@
     <p><u>Language:</u> Spanish (Limited working proficiency), Greek (Limited working proficiency)</p>
     <p><u>Social Media Proficiency:</u> Facebook, Twitter, Snapchat, Instagram</p>
     <p><u>Software Tools Proficiency:</u> Microsoft Office Suite, Adobe Photoshop, Java (proficient), Python (beginner),
-      HTML/CSS</p>
+      HTML/CSS (beginner)</p>
     <p><u>Awards/Honors:</u> Florida Bright Futures Academic Scholar (08/2019-present), University Dean’s List
       (08/2019-present),
       Heavener Leadership Challenge Participant (Spring 2021)</p>
     <p><u>General Body Member Organizations:</u> Florida Women in Business, UF Pre-Law Honor Society</p>
   </section>
   <footer class="credits">
-    <h1>Sophia Krinos</h1>
-    <p id="subheader">Gainesville, FL | (813) 334-8273 | sophiakrinos@ufl.edu |
-      https://www.linkedin.com/in/sophia-krinos/
-    </p>
+    <button id="bottom" onclick="photo()"><h1>Sophia Krinos</h1></button>
   </footer>
+  <script>
+    var open = false;
+    var created = false;
+    function photo() {
+      if(open == false && created == true) {
+        var footer = document.getElementsByClassName("panel");
+        footer[0].style.display = "block";
+        open = true;
+      } else if(open == false && created == false){
+        var footer = document.getElementsByClassName("credits");
+        var panel = document.createElement("div");
+        var image = document.createElement("img");
+        var description = document.createElement("p");
+        var linkedin = document.createElement("a");
+        description.innerHTML="Gainesville, FL | (813) 334-8273 | sophiakrinos@ufl.edu |";
+        linkedin.href="https://www.linkedin.com/in/sophia-krinos/";
+        linkedin.innerHTML="https://www.linkedin.com/in/sophia-krinos/";
+        image.src = "sophi.jpg";
+        panel.classList.add("panel");
+        image.classList.add("profilepic");
+        panel.appendChild(image);
+        panel.appendChild(description);
+        panel.appendChild(linkedin);
+        footer[0].insertBefore(panel, footer[0].firstChild);
+        created = true;
+        open = true;
+      } else {
+        var footer = document.getElementsByClassName("panel");
+        footer[0].style.display = "none";
+        open = false;
+      }
+    }
+  </script>
 </body>
 
-</html>
+</html> 
